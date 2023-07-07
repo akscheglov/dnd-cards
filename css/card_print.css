@@ -1,0 +1,141 @@
+@font-face {
+	font-family: Marta;
+	src: url("fonts/Marta_Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Marta;
+	font-style: italic;
+	src: url("fonts/Marta_Italic.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Marta;
+	font-style: bold;
+	src: url("fonts/Marta_Bold.otf") format("opentype");
+}
+
+@media print {
+	div.card {
+		break-inside: avoid;
+	}
+}
+
+body {
+	margin: 0;
+	width: 0;
+	width: 100%;
+}
+
+p {
+	margin: 0;
+}
+
+.selector {
+	margin: 10px;
+}
+
+.cards {
+	width: 200mm;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1px;
+	margin: 10px;
+}
+
+.cards>.card {
+	margin: 1px;
+}
+
+.card {
+	font-family: Forum;
+	height: 132mm;
+	width: 96mm;
+	padding: 2.2mm 2.2mm;
+	background-color: #999;
+	display: flex;
+	flex-direction: column;
+}
+
+.card>div:last-of-type {
+	border-radius: 0 0 2mm 2mm;
+}
+
+.title {
+	font-family: Marta;
+	background-color: white;
+	font-size: 6mm;
+	border-radius: 2mm 2mm 0 0;
+	text-align: center;
+	padding: 0.2mm;
+}
+
+.title.bigname {
+	font-size: 5mm;
+	line-height: 5mm;
+}
+
+.level {
+	text-align: center;
+	font-size: 3.6mm;
+	color: #fff;
+	padding: 0.2mm;
+}
+
+.props {
+	text-align: center;
+	font-size: 5mm;
+	margin-bottom: 1px;
+}
+
+.props-row {
+	display: flex;
+	margin-bottom: 0.5mm;
+}
+
+.prop {
+	flex: 50%;
+	background-color: white;
+}
+
+.prop-left {
+	margin-right: 0.25mm;
+}
+
+.prop-rigth {
+	margin-left: 0.25mm;
+}
+
+.content {
+	flex-grow: 1;
+}
+
+.text {
+	background-color: white;
+	padding: 1mm;
+	font-size: 18px;
+}
+
+.text p {
+	margin-bottom: 1mm;
+}
+
+.text.small0 {
+	font-size: 16px;
+}
+
+.text.small1 {
+	font-size: 15px;
+}
+
+.text.small2 {
+	font-size: 13px;
+}
+
+.text.small3 {
+	font-size: 12px;
+}
+
+.text.small4 {
+	font-size: 11px;
+}

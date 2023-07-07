@@ -1,0 +1,14 @@
+@font-face {
+	font-family: Russ;
+	src: url("fonts/alaruss.ttf") format("truetype");
+}
+
+.card.purpur {
+	background-image: url(../pics/bg-purpur.jpeg);
+	color: #5f2b75;
+}
+
+.purpur>.title {
+	font-family: 'Russ';
+	border-color: #5f2b75;
+}
